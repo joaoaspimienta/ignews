@@ -8,7 +8,7 @@ export default function Home() {
       </Head>
 
       <h1>
-        Hello world
+        Hello world>
       </h1>
     </>
   )
