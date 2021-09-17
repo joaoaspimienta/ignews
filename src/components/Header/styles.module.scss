@@ -25,6 +25,10 @@
             color: var(--gray-300);
 
             transition: color 0.2s;
+
+            & + a {
+                margin-left: 2rem;
+            }
             
             &:hover {
                 color: var(--white);
