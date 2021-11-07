@@ -2,7 +2,6 @@ import { query as q } from 'faunadb'
 
 import NextAuth from "next-auth"
 import Providers from "next-auth/providers"
-import { env } from 'process';
 
 import { fauna } from "../../../services/fauna";
 

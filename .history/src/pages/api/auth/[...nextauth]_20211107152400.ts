@@ -2,7 +2,6 @@ import { query as q } from 'faunadb'
 
 import NextAuth from "next-auth"
 import Providers from "next-auth/providers"
-import { env } from 'process';
 
 import { fauna } from "../../../services/fauna";
 
@@ -14,6 +13,9 @@ export default NextAuth({
           scope: 'read:user'
       }),
   ],
+  jwt: {
+    signingKey: 
+  },
   callbacks: {
     async signIn(user, account, profile) {
       const { email } = user
